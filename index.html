@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacidad de Galaxy Collision</title>
+<meta name="description" content="Aviso de privacidad de Galaxy Collision (Seraby Games) · Privacy policy of Galaxy Collision (Seraby Games).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: one readable column on a deep-space ground, like a mission briefing; quick facts first, then the full text. Single dark theme on purpose (the game's own look). */
+:root {
+  --space: #070b1f;
+  --panel: #0e1533;
+  --line: #22305f;
+  --text: #dfe5f7;
+  --muted: #9aa6cf;
+  --orange: #ff9a3d;
+  --cyan: #5cc8ff;
+  --ok: #6ee2a0;
+  --font-logo: "Orbitron", "Rajdhani", system-ui, sans-serif;
+  --font-head: "Rajdhani", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--space); }
+body {
+  background:
+    radial-gradient(1200px 500px at 85% -10%, rgba(92, 200, 255, .10), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(255, 154, 61, .07), transparent 60%),
+    var(--space);
+  color: var(--text);
+  font: 400 1.0625rem/1.65 var(--font-body);
+  margin: 0;
+  padding-inline: 20px;
+  padding-block: 0 64px;
+  min-height: 100vh;
+}
+.wrap { max-width: 44rem; margin: 0 auto; }
+header.top {
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
+  padding-block: 28px 8px;
+}
+.studio { font: 700 .8rem/1 var(--font-head); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+.lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; gap: 2px; }
+.lang button {
+  font: 700 .85rem/1 var(--font-head); letter-spacing: .12em; color: var(--muted);
+  background: transparent; border: 0; border-radius: 999px; padding: 8px 14px; cursor: pointer;
+}
+.lang button[aria-pressed="true"] { background: var(--line); color: var(--text); }
+.lang button:focus-visible, a:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+h1 {
+  font: 900 clamp(1.9rem, 6vw, 2.8rem)/1.05 var(--font-logo);
+  letter-spacing: .02em; margin: 28px 0 6px; text-wrap: balance;
+}
+h1 .accent { color: var(--orange); }
+.kicker { font: 600 1.25rem/1.3 var(--font-head); color: var(--cyan); margin: 0 0 6px; letter-spacing: .04em; }
+.updated { color: var(--muted); font-size: .95rem; margin: 0 0 28px; }
+.facts {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); gap: 1px;
+  background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 0 0 36px;
+}
+.fact { background: var(--panel); padding: 14px 16px; display: flex; gap: 12px; align-items: baseline; min-width: 0; }
+.fact b { font: 700 .8rem/1 var(--font-head); letter-spacing: .14em; text-transform: uppercase; color: var(--ok); flex: 0 0 auto; }
+.fact span { color: var(--text); font-size: .98rem; line-height: 1.35; }
+h2 {
+  font: 700 1.35rem/1.2 var(--font-head); letter-spacing: .06em; text-transform: uppercase;
+  margin: 36px 0 10px; padding-top: 18px; border-top: 1px solid var(--line); text-wrap: balance;
+}
+h2 .n { color: var(--orange); font-variant-numeric: tabular-nums; margin-right: .5em; }
+p, li { max-width: 65ch; }
+ul { padding-left: 1.2em; margin: 8px 0 12px; }
+li { margin: 4px 0; }
+li::marker { color: var(--cyan); }
+a { color: var(--cyan); text-underline-offset: 3px; }
+.contact {
+  margin-top: 12px; padding: 16px 18px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center;
+}
+.contact .mail { font: 600 1.1rem/1.3 var(--font-body); user-select: all; word-break: break-all; }
+.contact button {
+  font: 700 .85rem/1 var(--font-head); letter-spacing: .12em; text-transform: uppercase; color: var(--space);
+  background: var(--orange); border: 0; border-radius: 6px; padding: 9px 14px; cursor: pointer;
+}
+footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
+[lang="en"] { }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="top">
+    <div class="studio">Seraby Games</div>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="btn-es" data-lang="es" aria-pressed="true">ES</button>
+      <button type="button" id="btn-en" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <main id="es" lang="es">
+    <h1>GALAXY <span class="accent">COLLISION</span></h1>
+    <p class="kicker">Aviso de privacidad</p>
+    <p class="updated">Última actualización: 8 de octubre de 2026</p>
+
+    <div class="facts" aria-label="Resumen">
+      <div class="fact"><b>No</b><span>recopilamos datos personales</span></div>
+      <div class="fact"><b>No</b><span>hay anuncios</span></div>
+      <div class="fact"><b>No</b><span>hay analíticas ni rastreo</span></div>
+      <div class="fact"><b>No</b><span>hay cuentas ni registro</span></div>
+      <div class="fact"><b>No</b><span>compartimos ni vendemos datos</span></div>
+      <div class="fact"><b>Local</b><span>tu partida se guarda solo en tu dispositivo</span></div>
+    </div>
+
+    <p>Este aviso explica qué información usa <strong>Galaxy Collision</strong>, el juego de Seraby Games, en Android (Google Play) y en PC. La versión corta: el juego no recopila, no envía y no comparte información sobre ti.</p>
+
+    <h2><span class="n">1</span>Quién es el responsable</h2>
+    <p>Galaxy Collision es desarrollado por <strong>Seraby Games</strong>, un estudio independiente de una sola persona. Para cualquier duda sobre este aviso, escríbenos al correo que aparece en la sección 9.</p>
+
+    <h2><span class="n">2</span>Qué información recopilamos</h2>
+    <p>Ninguna. El juego no te pide nombre, correo, edad ni ningún otro dato, no tiene cuentas de usuario y no envía información a servidores de Seraby Games ni de terceros. No tenemos servidores que reciban datos del juego.</p>
+
+    <h2><span class="n">3</span>Qué se guarda en tu dispositivo</h2>
+    <p>Para que puedas seguir jugando donde te quedaste, el juego guarda en la memoria de tu propio dispositivo:</p>
+    <ul>
+      <li>Tus partidas (oleada, mejoras, minerales, progreso).</li>
+      <li>Tus opciones (idioma, volumen, calidad gráfica, sensibilidad de los controles).</li>
+      <li>Los logros que has desbloqueado.</li>
+    </ul>
+    <p>Esa información nunca sale de tu dispositivo por parte del juego y nosotros no tenemos acceso a ella. Si desinstalas el juego en Android, se borra. También puedes borrarla desde los ajustes de Android (Aplicaciones ▸ Galaxy Collision ▸ Almacenamiento ▸ Borrar datos).</p>
+    <p>Si tienes activada la copia de seguridad de Android, el propio sistema puede incluir estos archivos en la copia de tu cuenta de Google para restaurarlos en otro teléfono. Ese servicio lo administra Google, se rige por su política de privacidad y tú lo controlas desde los ajustes de tu dispositivo.</p>
+
+    <h2><span class="n">4</span>Sensores del dispositivo</h2>
+    <p>En la misión del agujero negro, la versión de Android usa el giroscopio (o el acelerómetro) para que manejes la nave inclinando el teléfono. Esos datos se usan solo en el momento, dentro del juego. No se guardan ni se envían a ningún lado.</p>
+
+    <h2><span class="n">5</span>Anuncios, analíticas y servicios de terceros</h2>
+    <p>Galaxy Collision no tiene anuncios, no usa herramientas de analítica ni de rastreo y no incluye kits de terceros que recopilen datos. El juego está hecho con el motor Unity y desactivamos la recopilación de datos de diagnóstico de Unity, así que el motor tampoco envía información.</p>
+    <p>Si compras el juego en una tienda (Google Play, Steam o Microsoft Store), el pago lo procesa esa tienda con sus propias reglas de privacidad. Nosotros no recibimos tus datos de pago.</p>
+
+    <h2><span class="n">6</span>Versión de PC en Steam</h2>
+    <p>Si juegas en Steam, el juego usa Steamworks, el servicio de Valve, para tus logros, una estadística de asteroides destruidos y el guardado en la nube de Steam Cloud. Esa información la procesa Valve, ligada a tu cuenta de Steam y según la <a href="https://store.steampowered.com/privacy_agreement/" target="_blank" rel="noopener">política de privacidad de Valve</a>. Seraby Games no recibe tus datos personales de Steam.</p>
+
+    <h2><span class="n">7</span>Niños</h2>
+    <p>Como el juego no recopila información de nadie, tampoco recopila información de niños.</p>
+
+    <h2><span class="n">8</span>Cambios a este aviso</h2>
+    <p>Si en el futuro el juego cambia la forma en que trata la información (por ejemplo, si se agregara alguna función en línea), actualizaremos este aviso antes de que ese cambio llegue al juego y cambiaremos la fecha de arriba.</p>
+
+    <h2><span class="n">9</span>Contacto</h2>
+    <p>¿Preguntas sobre este aviso o sobre tus datos? Escríbenos:</p>
+    <div class="contact">
+      <span class="mail">serdevapps@gmail.com</span>
+      <button type="button" class="copy" data-copied="Copiado">Copiar correo</button>
+    </div>
+  </main>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <main id="en" lang="en" hidden>
+    <h1>GALAXY <span class="accent">COLLISION</span></h1>
+    <p class="kicker">Privacy policy</p>
+    <p class="updated">Last updated: October 8, 2026</p>
+
+    <div class="facts" aria-label="Summary">
+      <div class="fact"><b>No</b><span>personal data collected</span></div>
+      <div class="fact"><b>No</b><span>ads</span></div>
+      <div class="fact"><b>No</b><span>analytics or tracking</span></div>
+      <div class="fact"><b>No</b><span>accounts or sign-up</span></div>
+      <div class="fact"><b>No</b><span>data shared or sold</span></div>
+      <div class="fact"><b>Local</b><span>your progress is saved only on your device</span></div>
+    </div>
+
+    <p>This policy explains what information <strong>Galaxy Collision</strong>, the game by Seraby Games, uses on Android (Google Play) and on PC. The short version: the game does not collect, send or share any information about you.</p>
+
+    <h2><span class="n">1</span>Who is responsible</h2>
+    <p>Galaxy Collision is developed by <strong>Seraby Games</strong>, a one-person independent studio. For any question about this policy, write to the address in section 9.</p>
+
+    <h2><span class="n">2</span>What we collect</h2>
+    <p>Nothing. The game does not ask for your name, email, age or any other data, has no user accounts, and sends no information to Seraby Games or to third parties. We do not run any servers that receive data from the game.</p>
+
+    <h2><span class="n">3</span>What is stored on your device</h2>
+    <p>So you can continue where you left off, the game stores on your own device:</p>
+    <ul>
+      <li>Your saved games (wave, upgrades, minerals, progress).</li>
+      <li>Your settings (language, volume, graphics quality, control sensitivity).</li>
+      <li>The achievements you have unlocked.</li>
+    </ul>
+    <p>The game never sends this information off your device, and we have no access to it. Uninstalling the game on Android deletes it. You can also clear it from Android settings (Apps ▸ Galaxy Collision ▸ Storage ▸ Clear data).</p>
+    <p>If Android backup is turned on, the system itself may include these files in your Google account backup so they can be restored on another phone. That service is run by Google, follows Google's privacy policy, and you control it from your device settings.</p>
+
+    <h2><span class="n">4</span>Device sensors</h2>
+    <p>In the black hole mission, the Android version uses the gyroscope (or accelerometer) so you can steer the ship by tilting your phone. That data is used only in the moment, inside the game. It is never stored or sent anywhere.</p>
+
+    <h2><span class="n">5</span>Ads, analytics and third-party services</h2>
+    <p>Galaxy Collision has no ads, uses no analytics or tracking tools, and includes no third-party kits that collect data. The game is built with the Unity engine, and we turned off Unity's diagnostic data collection, so the engine does not send information either.</p>
+    <p>If you buy the game in a store (Google Play, Steam or Microsoft Store), that store processes the payment under its own privacy rules. We do not receive your payment details.</p>
+
+    <h2><span class="n">6</span>PC version on Steam</h2>
+    <p>If you play on Steam, the game uses Steamworks, Valve's service, for your achievements, one statistic (asteroids destroyed) and Steam Cloud saves. Valve processes that information, linked to your Steam account and under <a href="https://store.steampowered.com/privacy_agreement/" target="_blank" rel="noopener">Valve's privacy policy</a>. Seraby Games does not receive your personal Steam data.</p>
+
+    <h2><span class="n">7</span>Children</h2>
+    <p>Because the game collects no information from anyone, it collects no information from children.</p>
+
+    <h2><span class="n">8</span>Changes to this policy</h2>
+    <p>If the game ever changes how it handles information (for example, if an online feature were added), we will update this policy before that change reaches the game and change the date above.</p>
+
+    <h2><span class="n">9</span>Contact</h2>
+    <p>Questions about this policy or your data? Write to us:</p>
+    <div class="contact">
+      <span class="mail">serdevapps@gmail.com</span>
+      <button type="button" class="copy" data-copied="Copied">Copy email</button>
+    </div>
+  </main>
+
+  <footer>© 2026 Seraby Games · Galaxy Collision</footer>
+</div>
+
+<script>
+(function () {
+  var es = document.getElementById('es'), en = document.getElementById('en');
+  var bEs = document.getElementById('btn-es'), bEn = document.getElementById('btn-en');
+  function show(lang) {
+    var isEn = lang === 'en';
+    es.hidden = isEn; en.hidden = !isEn;
+    bEs.setAttribute('aria-pressed', String(!isEn));
+    bEn.setAttribute('aria-pressed', String(isEn));
+    document.documentElement.lang = isEn ? 'en' : 'es';
+    document.title = isEn ? 'Galaxy Collision Privacy' : 'Privacidad de Galaxy Collision';
+  }
+  var start = 'es';
+  var h = (location.hash || '').replace('#', '').toLowerCase();
+  if (h === 'en' || h === 'es') start = h;
+  else if ((navigator.language || '').toLowerCase().indexOf('es') !== 0) start = 'en';
+  show(start);
+  bEs.addEventListener('click', function () { show('es'); });
+  bEn.addEventListener('click', function () { show('en'); });
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var mail = btn.parentNode.querySelector('.mail');
+      var label = btn.textContent;
+      function done() { btn.textContent = btn.getAttribute('data-copied'); setTimeout(function () { btn.textContent = label; }, 1600); }
+      function fallback() {
+        var r = document.createRange(); r.selectNodeContents(mail);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      }
+      try {
+        navigator.clipboard.writeText(mail.textContent.trim()).then(done, fallback);
+      } catch (e) { fallback(); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
